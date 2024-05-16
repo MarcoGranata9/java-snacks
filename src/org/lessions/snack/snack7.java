@@ -23,7 +23,12 @@ public class snack7 {
         System.out.println("minuti " + minutes);
         System.out.println("secondi " + seconds);
 
-        System.out.println(hours + ":" + minutes + ":" + seconds);
+        String hFormat = String.format("%02d", hours);
+        String mFormat = String.format("%02d", minutes);
+        String sFormat = String.format("%02d", seconds);
+
+
+        System.out.println(hFormat + ":" + mFormat + ":" + sFormat);
         scanner.close();
     }
 }
