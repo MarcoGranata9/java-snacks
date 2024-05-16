@@ -8,10 +8,10 @@ public class snack2 {
     public static void main(String[] args) {
         String[] names = {"Marco", "Francesco", "Anna", "Maria"};
         String[] surnames = {"Rossi", "Bianchi", "Ferrari", "Esposito"};
-        int namesLength = names.length;
+
         Random r = new Random();
-        for (int i = 0; i < 5; i++) {
-            System.out.println(names[r.nextInt(4)] + " " + surnames[r.nextInt(4)]);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(names[r.nextInt(names.length)] + " " + surnames[r.nextInt(surnames.length)]);
         }
     }
 }
